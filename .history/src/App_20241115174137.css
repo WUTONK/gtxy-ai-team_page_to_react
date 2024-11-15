@@ -1,0 +1,165 @@
+/* ================ 
+   基础样式
+   ================ */
+/* 根容器样式 - 设置基础布局尺寸 */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  --color-primary: #003E74;
+  --color-grey: #EBEEEE;
+}
+
+/* ================ 
+   布局容器
+   ================ */
+/* 主应用容器 - Flex布局实现居中 */
+.app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;    /* 添加横向居中 */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* background-color: plum; */
+}
+
+/* 头部导航样式 */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  /* background-color: brown; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-left {
+  flex: 1;
+  background-color: blue;
+}
+
+.header-center {
+  flex: 1;
+  background-color: yellow;
+}
+
+.header-right {
+  flex: 1;
+  background-color: green;
+}
+
+/* ================ 
+   原HTML网页样式
+   ================ */
+/* 根容器样式 - 设置基础布局尺寸 */
+@import url('https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: 'PT Sans', 'Noto Sans SC', sans-serif;
+}
+
+body {
+    margin: 40px;
+}
+
+.header {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    margin-left: 0px;
+}
+
+
+
+.header-text {
+    margin-left: 20px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.nav a {
+    margin-right: 10px;
+}
+
+.nav a:last-child {
+    margin-right: 0;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.projects {
+    margin-top: 20px;
+}
+
+.projects h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+.fa-brands {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+

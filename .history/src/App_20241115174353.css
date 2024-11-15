@@ -24,6 +24,8 @@ body {
     margin-left: 0px;
 }
 
+
+
 .header-text {
     margin-left: 20px;
 }
@@ -110,12 +112,12 @@ a:hover {
 
 .header-left {
   flex: 1;
-  /* background-color: blue; */
+  background-color: blue;
 }
 
 .header-center {
   flex: 1;
-  /* background-color: yellow; */
+  background-color: yellow;
 }
 
 .header-right {
@@ -123,61 +125,23 @@ a:hover {
   background-color: green;
 }
 
-/* ================ 
-   组件样式
-   ================ */
-/* Logo相关样式 */
+
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;  /* 优化动画性能 */
-  transition: filter 300ms;  /* 过渡动画效果 */
+  width: 100px;
+  height: 100px;
 }
-
-/* Logo悬停效果 */
+.logo img {
+  width: 100px;
+  height: 100px;
+}
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);  /* 紫色阴影效果 */
+  filter: drop-shadow(0 0 2em #646cffaa);
 }
-
-/* react logo 悬停效果 */
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);  /* React标志特殊的蓝色阴影 */
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/* 卡片容器样式 */
-.card {
-  padding: 2em;
-}
-
-/* 文档链接样式 */
-.read-the-docs {
-  color: #888;  /* 浅灰色文本 */
-}
-
-/* 深色主题切换按钮动画 */
-.dark_theme_toggle_button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  transition: all 0.3s;  /* 平滑过渡效果 */
-}
-
-/* 图片测试容器 - Flex布局实现居中 */
-.image_test {
-  padding: 20px;
-  text-align: center;
-}
-
-/* 图片尺寸控制 */
-.image_test img {
-  width: 256px;
-  height: 256px;
-}
-
-/* ================ 
-   动画效果
-   ================ */
-/* Logo旋转动画定义 */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -187,10 +151,17 @@ a:hover {
   }
 }
 
-/* 仅在用户未设置减少动画时显示旋转动画 */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }
 
